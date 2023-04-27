@@ -1,0 +1,18 @@
+:root {
+    --mainFont : 'Krub', sans-serif;
+    --white: #ffffff;
+    --primary: #FFC107;
+    --secondary: #0097A7;
+    --gray : #757575;
+    --dark : #212121;
+}
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--mainFont);
+}
