@@ -20,6 +20,8 @@ html {
 
 body {
     font-family: var(--mainFont);
+    min-height: 100%;
+    background: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
 .button {
@@ -41,10 +43,25 @@ body {
     max-width: 1200px;
     padding: 2rem;
     background-color: var(--white);
-    -webkit-box-shadow: 0px 4px 12px -1px rgba(0,0,0,0.45);
-    -moz-box-shadow: 0px 4px 12px -1px rgba(0,0,0,0.45);
-    box-shadow: 0px 4px 12px -1px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 0px 4px 12px -1px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0px 4px 12px -1px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 4px 12px -1px rgba(0, 0, 0, 0.45);
     border-radius: 1rem;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+h3 {
+    color: var(--secondary);
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+p {
+    line-height: 2;
 }
 
 .main-navigation {
@@ -89,7 +106,7 @@ body {
 
 .hero::after {
     content: '';
-    background-color: rgba(0,0,0, .7);
+    background-color: rgba(0, 0, 0, .7);
     display: block;
     top: 0;
     left: 0;
@@ -103,4 +120,15 @@ body {
     position: relative;
     z-index: 1;
     text-align: center;
+}
+
+@media (min-width:768px) {
+    .services-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .service {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
 }
