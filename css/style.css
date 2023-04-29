@@ -132,3 +132,23 @@ p {
         flex: 0 0 calc(33.3% - 1rem);
     }
 }
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    background-color: var(--primary);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icons i {
+    font-size: 2rem;
+}
